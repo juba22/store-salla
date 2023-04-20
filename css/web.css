@@ -198,6 +198,56 @@ a.navbar-brand.logo-mob-menu{display: none;}
     .menu-down {
         display: none;
     }
+    button.navbar-toggle svg {color: #f0f !important;background: #f0f !important;}
+
+    .txt-cover h2 {
+        font-size: 28px;
+    }
+
+    .txt-ads h3 {
+        font-size: 29px !important;
+        margin-bottom: 24px;
+        font-weight: bold;
+    }
+
+    .txt-ads p {
+        font-size: 20px !important;
+    }
+
+    section.ads.container.img-thumbnails {
+        padding: 34px;
+    }
+
+    footer .search form {
+        width: 100%;
+    }
+
+    form.d-flex {
+        width: 100% !important;
+    }
+
+
+    .social-footer {
+        margin-bottom: 29px;
+    }
+
+    footer .search {display: flex;flex-direction: column;align-items: center;}
+
+    footer .social-footer p {
+        text-align: center;
+    }
+
+    footer .social-footer .social-icon div {
+        margin: 0 14px;
+    }
+
+    footer .subscribe p {
+        text-align: center;
+    }
+
+    footer .subscribe {
+        margin-bottom: 30px;
+    }
 }
 .center-cover {
     background: #e5e5e9;
