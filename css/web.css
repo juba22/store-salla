@@ -164,24 +164,20 @@ nav.active .dropdown-menu.show a {
     justify-content: space-between;
     padding: 0;
 }
-a.navbar-brand.logo-mob-menu{display: none;}
 @media (min-width: 300px) and (max-width: 1200px) {
     ul.navbar-nav li {
         border: none !important;
         margin-bottom: var(--md-margin);
     }
-    a.navbar-brand.logo-mob-menu {
-        margin-right: 0;
-        display: inline-block;
-        margin-bottom: 22px;
-    }
-    a.navbar-brand.logo-mob-menu img {
-        width: 200px;
-    }
     ul.navbar-nav {
         padding: 0;
     }
-
+    .menu-mob{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .navbar-collapse.collapse.show {
         text-align: center;
     }
