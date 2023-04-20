@@ -98,13 +98,6 @@ button.navbar-toggler {
     background: #fff !important;
 }
 
-.navbar-collapse.collapse.show {
-    background: #130f40eb;
-    position: fixed;
-    inset: 0;
-    padding: 130px;
-}
-
 button.navbar-toggler {
     position: relative;
     z-index: 1;
@@ -173,10 +166,8 @@ nav.active .dropdown-menu.show a {
         padding: 0;
     }
     .menu-mob{
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        display: inline-flex !important;
+        flex-direction: column !important;
     }
     .navbar-collapse.collapse.show {
         text-align: center;
