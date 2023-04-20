@@ -90,7 +90,6 @@ nav a.navbar-brand img {
 }
 
 .navbar-light .navbar-toggler {
-    color: rgb(255 255 255);
     border-color: rgb(255 255 255);
     background: #fff;
 }
@@ -142,11 +141,6 @@ ul.navbar-nav li {
     transform: translate(-5px, -9px);
     font-size: 12px;
 }
-.navbar-light .navbar-toggler {
-    background: transparent !important;
-    border: transparent;
-}
-
 nav.navbar {
     border-bottom: 1px solid #ffffff40;
     transition: var(--smoth-transition);
