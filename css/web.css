@@ -1113,3 +1113,7 @@ footer .subscribe form button {
 footer .subscribe form button span {
     margin-left: 9px;
 }
+
+.content-footer .title a:hover {
+    color: var(--second-color);
+}
