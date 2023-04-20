@@ -1170,3 +1170,10 @@ footer .subscribe form button span {
 .content-footer .title a:hover {
     color: var(--second-color);
 }
+.content-product-down ul.list-details-product li {
+    justify-content: flex-start;
+}
+
+.content-product-down ul.list-details-product {
+    padding: 0;
+}
