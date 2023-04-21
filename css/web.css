@@ -163,7 +163,7 @@ nav.active .dropdown-menu.show a {
         margin-bottom: var(--md-margin);
     }
     nav form.d-flex input {
-        width: 73%;
+        width: 73% !important;
     }
     ul.navbar-nav {
         padding: 0;
