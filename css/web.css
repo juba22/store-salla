@@ -179,6 +179,44 @@ nav.active .dropdown-menu.show a {
     padding: 0;
 }
 @media (min-width: 300px) and (max-width: 1200px) {
+    .features .row .block-feature-1 {flex: 1; min-width: 150px;}
+    div#navbarSupportedContent {
+        width: 100%;
+        text-align: center;
+    }
+    nav .btn-nav.icon-menu-mob {
+        margin: 0;
+        display: inline-block;
+    }
+    .btn-nav.icon-menu-desktop {
+        display: none;
+    }
+    .icon-menu-head {
+        display: flex;
+        align-items: center;
+    }
+    
+    .btn-nav.icon-menu-mob a.user {
+        margin-right: 10px;
+    }
+    
+    .btn-nav.icon-menu-mob a {
+        margin: 0;
+    }
+    footer .search input {
+        width: 70% !important;
+    }
+    .app .img-store img {
+        width: 150px !important;
+    }
+    
+    .app .pay img {
+        width: 328px !important;
+    }
+    
+    .app .img-store {
+        justify-content: center;
+    }
     ul.navbar-nav li {
         border: none !important;
         margin-bottom: var(--md-margin);
@@ -1072,6 +1110,8 @@ footer {
 }
 footer h4 {
     color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 4px;
 }
 
 footer ul li {
@@ -1134,6 +1174,9 @@ footer .social-footer .social-icon div {
 
 footer .social-footer .social-icon div.facebook-footer {
     background: #3b5998;
+}
+footer .social-footer .social-icon div.twitter-footer {
+    background: #1da1f2;
 }
 
 footer .social-footer .social-icon div.instagram-footer {

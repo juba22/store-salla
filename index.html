@@ -29,12 +29,20 @@
         <div class="container menu-top">
 
             <a class="navbar-brand" href="https://juba22.github.io/store-salla/"><img src="img/logo-2.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-grip-lines"></i>
-            </button>
+            <div class="icon-menu-head">
+                <div class="btn-nav icon-menu-mob">
+                    <a class="cart" type="submit"><span>0</span><i class="fas fa-shopping-cart"></i></a>
+                    <a class="cart" type="submit"><span>0</span><i class="far fa-heart"></i></a>
+                    <a class="user" type="submit" disabled><i class="far fa-user"></i></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-grip-lines"></i>
+                </button>
+            </div>
+            
         
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto menu-mob">
                     <li class="nav-item active">
                         <a class="nav-link" href="https://juba22.github.io/store-salla/">الرئيسية <span class="sr-only">(current)</span></a>
@@ -61,9 +69,9 @@
                         <button class="btn-custom"><span>بحث</span><i class="fas fa-search"></i></button>
                     </div>
                 </form>
-                <div class="btn-nav">
+                <div class="btn-nav icon-menu-desktop">
                     <a class="cart" type="submit"><span>0</span><i class="fas fa-shopping-cart"></i></a>
-                    <a class="cart" type="submit"><i class="far fa-heart"></i></a>
+                    <a class="cart" type="submit"><span>0</span><i class="far fa-heart"></i></a>
                     <a class="user" type="submit" disabled><i class="far fa-user"></i></a>
                 </div>
             </div>
@@ -749,6 +757,9 @@
                             </div>
                             <div class="tiktok-footer">
                                 <i class="fab fa-tiktok"></i>
+                            </div>
+                            <div class="twitter-footer">
+                                <i class="fab fa-twitter"></i>
                             </div>
                         </div>
                     </div>
