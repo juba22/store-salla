@@ -44,18 +44,44 @@ textarea {
 }
 
 .btn-custom {
-    background: var(--second-color);
-    color: rgb(255, 255, 255);
-    border-radius: var(--lg-radius);
-    transition: var(--smoth-transition);
-    border: none;
-    padding: var(--sm-padding) var(--lg-padding);
+    border-radius: var(
+    --lg-radius);
+    transition: var(
+    --smoth-transition);
+    border: 1px solid var(
+    --second-color);
+    padding: var(
+    --sm-padding) var(--lg-padding);
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
-.btn-custom:hover {
-    color: rgb(255, 255, 255);
-    background: rgb(253, 125, 12);
+.btn-custom:hover a {
+    color: #fff !important;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-custom a {
+    color: var(--second-color);
+    transition: all 350ms ease;
+}
+
+.btn-custom:before {
+    content: '';
+    background: var(--second-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right:100%;
+    z-index: 0;
+    transition: all 400ms ease;
+}
+
+.btn-custom:hover:before {
+    right:0
 }
 
 .d-flex {
@@ -140,11 +166,6 @@ nav.navbar {
     z-index: 9;
     background: #ffffff0f;
 }
-
-nav.active {
-    background: var(--custom-color);
-}
-
 nav.active ul.navbar-nav li a {
     color: rgb(255, 255, 255) !important;
 }
@@ -414,6 +435,11 @@ section.category {
     padding: 0;
     min-width: 300px;
     margin: var(--sm-margin);
+    transition: all 350ms ease;
+}
+
+.men-jacket .block-res:hover {
+    transform: scale(1.01);
 }
 .row.visited {
     justify-content: center;
@@ -883,7 +909,7 @@ ul.navbar-nav.m-auto.menu-mob {
     display: none;
 }
 
-nav form.d-flex button.btn-custom {position: absolute;left: 0;top: 0;height: 100%;}
+nav form.d-flex button.btn-custom {position: absolute;left: 0;top: 0;height: 100%;background: var(--second-color);color: #fff;}
 nav form.d-flex {margin: auto;background: var(--second-color);border-radius: var(--lg-radius);width: 54%;position: relative;height: 50px;overflow: hidden;}
 
 nav form.d-flex input {
@@ -931,10 +957,6 @@ nav button.btn-custom span {
 
 .txt-cover h2 {
     margin-bottom: var(--sm-margin);
-}
-
-.txt-cover button.btn-custom a {
-    color: #fff;
 }
 
 .features .block-feature-1 {
@@ -1046,7 +1068,7 @@ nav button.btn-custom span {
 }
 footer {
     background: #3c3c3c;
-    padding: 50px;
+    padding: 50px 0 0;
 }
 footer h4 {
     color: #fff;
@@ -1083,9 +1105,9 @@ footer .search input {
     inset: 2px;
 }
 
-footer .search button.btn-custom {position: absolute;top: 0;left: 0;bottom: 0;}
+footer .search button {position: absolute;top: 0;left: 0;border-radius: 25px;bottom: 0;background: var(--second-color);color: #fff;border: none;padding: 0 24px;}
 
-footer .search button.btn-custom span {
+footer .search button span {
     margin-left: var(--sm-margin);
 }
 footer .social-footer p {
@@ -1121,43 +1143,37 @@ footer .social-footer .social-icon div.instagram-footer {
 footer .social-footer .social-icon div.tiktok-footer {
     background: #010101;
 }
-footer .subscribe p {
-    text-align: right;
-    color: #fff;
-    font-size: 18px;
-}
-
-footer .subscribe form {
-    background: #fff;
-    border-radius: var(--lg-radius);
-    width: 70%;
-}
-
-footer .subscribe form input {
-    width: 85%;
-    border-radius: var(--lg-radius);
-    padding: 0 9px;
-}
-
-footer .subscribe form button {
-    background: transparent;
-    color: var(--second-color);
-    display: flex;
-    align-items: center;
-    padding: 8px;
-}
-
-footer .subscribe form button span {
-    margin-left: 9px;
-}
-
 .content-footer .title a:hover {
     color: var(--second-color);
 }
 .content-product-down ul.list-details-product li {
     justify-content: flex-start;
 }
-
 .content-product-down ul.list-details-product {
     padding: 0;
+}
+.app .img-store {
+    display: flex;
+    align-items: center;
+}
+.app .img-store img {
+    width: 211px;
+}
+.app .pay {
+    text-align: right;
+    color: #fff;
+}
+
+.app .pay img {
+    margin-top: 6px;
+    width: 420px;
+}
+.app .pay p {
+    font-size: 20px;
+}
+footer .copyright-footer {
+    padding: 30px 0;
+    color: #fff;
+    background: #444;
+    margin-top: 20px;
 }
