@@ -178,7 +178,25 @@ nav.active .dropdown-menu.show a {
     justify-content: space-between;
     padding: 0;
 }
-@media (min-width: 300px) and (max-width: 1200px) {
+.btn-nav.icon-menu-desktop a {
+    font-size: 22px;
+    transition: var(--smoth-transition);
+}
+
+.btn-nav.icon-menu-desktop a:hover {
+    color: var(--second-color);
+}
+.btn-nav.icon-menu-mob {
+    display: none;
+}
+
+.collapse.show {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+@media (max-width: 767.98px) { 
     .features .row .block-feature-1 {flex: 1; min-width: 150px;}
     div#navbarSupportedContent {
         width: 100%;
@@ -277,9 +295,11 @@ nav.active .dropdown-menu.show a {
     footer .search {display: flex;flex-direction: column;align-items: center;}
 
     footer .social-footer p {
-        text-align: center;
+        text-align: center !important;
     }
 
+    .app .pay p{text-align:center !important; margin-bottom:5px}
+    .app .pay{text-align:center !important}
     footer .social-footer .social-icon div {
         margin: 0 14px;
     }
@@ -999,6 +1019,20 @@ nav button.btn-custom span {
 
 .features .block-feature-1 {
     text-align: center;
+    transition: var(--smoth-transition);
+}
+.features {
+    transform: translateY(-60px);
+    opacity: 0;
+    transition: var(--smoth-transition);
+}
+
+.features.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+.features .block-feature-1:hover {
+    transform: translateY(-5px);
 }
 
 .features .block-feature-1 span {
