@@ -12,19 +12,6 @@ $(window).scroll(function() {
 
 });
 
-$(window).scroll(function() {
-    
-    var top = $('#features').scrollTop();
-    var featuresTop = $('#features').offset().top;
-
-    if (featuresTop >= top) {
-        $('#features').addClass('show');
-    }
-    if (featuresTop <= top) {
-        $('#features').removeClass('show');
-    }
-});
-
 $('.res.owl-carousel').owlCarousel({
     loop:true,
     margin:10,

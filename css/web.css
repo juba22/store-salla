@@ -1021,16 +1021,6 @@ nav button.btn-custom span {
     text-align: center;
     transition: var(--smoth-transition);
 }
-.features {
-    transform: translateY(-60px);
-    opacity: 0;
-    transition: var(--smoth-transition);
-}
-
-.features.show {
-    transform: translateY(0);
-    opacity: 1;
-}
 .features .block-feature-1:hover {
     transform: translateY(-5px);
 }
