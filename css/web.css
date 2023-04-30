@@ -197,6 +197,41 @@ nav.active .dropdown-menu.show a {
     flex-direction: column;
 }
 @media (max-width: 767.98px) { 
+    .owl-nav .owl-prev {
+        left: 23px !important;
+    }
+    
+    .owl-nav button {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    .owl-nav .owl-next {
+        right: 23px !important;
+    }
+    .slider .owl-item img {height: 310px !important;}
+
+    .row.center-cover {
+        flex-direction: column-reverse;
+    }
+
+    .txt-cover h2 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .txt-cover h1 {
+        font-size: 64px;
+        padding-top: 20px;
+    }
+
+    .txt-cover .btn-custom a {
+        font-size: 16px !important;
+    }
+
+    .txt-cover .btn-custom {
+        margin-top: 7px !important;
+    }
     .features .row .block-feature-1 {flex: 1; min-width: 150px;}
     div#navbarSupportedContent {
         width: 100%;
@@ -262,7 +297,7 @@ nav.active .dropdown-menu.show a {
     button.navbar-toggle svg {color: #f0f !important;background: #f0f !important;}
 
     .txt-cover h2 {
-        font-size: 28px;
+        font-size: 20px !important;
     }
 
     .txt-ads h3 {
@@ -1021,7 +1056,7 @@ nav button.btn-custom span {
     align-items: center;
     transition: all .5s 1s ease-in-out;
     opacity:0;
-    transform:translateY(-20px)
+    transform:translateY(-20px);
 }
 
 .txt-cover .btn-custom {
