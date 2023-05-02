@@ -32,7 +32,8 @@
             <a class="navbar-brand" href="https://juba22.github.io/store-salla/"><img src="img/logo-2.png"></a>
             <div class="icon-menu-head">
                 <div class="btn-nav icon-menu-mob">
-                    <a class="cart" type="submit"><span>0</span><i class="fas fa-shopping-cart"></i></a>
+                    <button type="button" data-toggle="modal" data-target="#cart"><span class="total-count">
+                    </span><i class="fas fa-shopping-cart"></i></button>
                     <a class="cart" type="submit"><span>0</span><i class="far fa-heart"></i></a>
                     <a class="user" type="submit" disabled><i class="far fa-user"></i></a>
                 </div>
@@ -71,7 +72,8 @@
                     </div>
                 </form>
                 <div class="btn-nav icon-menu-desktop">
-                    <a class="cart" type="submit"><span>0</span><i class="fas fa-shopping-cart"></i></a>
+                    <button type="button" data-toggle="modal" data-target="#cart"><span class="total-count">
+                    </span><i class="fas fa-shopping-cart"></i></button>
                     <a class="cart" type="submit"><span>0</span><i class="far fa-heart"></i></a>
                     <a class="user" type="submit" disabled><i class="far fa-user"></i></a>
                 </div>
@@ -147,6 +149,36 @@
         </div>
     </section>
 
+  
+    <!-- Modal box-card -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">عربة المشتريات</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="show-cart table">
+                
+                </table>
+                <div>الأجمالى: $<span class="total-cart"></span></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق السله</button>
+                <button type="button" class="btn btn-primary">أكمل طلبك</button>
+                <button class="clear-cart btn btn-danger">افراغ السله</button>
+            </div>
+            </div>
+        </div>
+    </div> 
+
+
+
+
+
     <!--featured-->
     <section class="features pt-5 wow animate__bounce" id="features">
         <div class="container">
@@ -202,8 +234,8 @@
             </div>
             <div class="row visited">
 
-                <div class="block-res col-lg-3 col-md-6 col-sm-12">
-                    <div class="img-res d-flex img-thumbnails" style="background-image: url(img/products/1.webp);">
+                <div class="card block-res col-lg-3 col-md-6 col-sm-12">
+                    <div class="img-res card-block d-flex img-thumbnails" style="background-image: url(img/products/1.webp);">
                         <div class="listing-meta">
                             <a href="#"><i class="far fa-heart"></i></a>
                         </div>
@@ -214,12 +246,13 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                         </div>
+                        <a href="#" data-name="جاكيت-رجالى" data-price="159.00" class="add-to-cart btn btn-primary">Add to cart</a>
                     </div>
                         
                     <div class="content-footer d-flex">
                         <h3 class="title">
                             <a href="https://juba22.github.io/store-salla/single-page.html">
-                            JAC22WFWP28270TM1</a>
+                            جاكيت رجالى</a>
                         </h3>
                         <div class="tt-price">
                             <span class="new-price">LE 159.00</span>
@@ -228,7 +261,7 @@
                 </div>
 
                 <div class="block-res col-lg-3 col-md-6 col-sm-12">
-                    <div class="img-res d-flex img-thumbnails" style="background-image: url(img/products/2.webp);">
+                    <div class="img-res card-block d-flex img-thumbnails" style="background-image: url(img/products/2.webp);">
                         <div class="listing-meta">
                             <a href="#"><i class="far fa-heart"></i></a>
                         </div>
@@ -239,12 +272,13 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                         </div>
+                        <a href="#" data-name="جاكيت-اطفالى" data-price="159.00" class="add-to-cart btn btn-primary">Add to cart</a>
                     </div>
                         
                     <div class="content-footer d-flex">
                         <h3 class="title">
                             <a href="https://juba22.github.io/store-salla/single-page.html">
-                            JAC22WFWP28270TM1</a>
+                            جاكيت اطقالى</a>
                         </h3>
                         <div class="tt-price">
                             <span class="new-price">LE 159.00</span>
@@ -264,12 +298,13 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                         </div>
+                        <a href="#" data-name="جاكيت-شبابي" data-price="159.00" class="add-to-cart btn btn-primary">Add to cart</a>
                     </div>
                         
                     <div class="content-footer d-flex">
                         <h3 class="title">
                             <a href="https://juba22.github.io/store-salla/single-page.html">
-                            JAC22WFWP28270TM1</a>
+                            جاكيت شبابي</a>
                         </h3>
                         <div class="tt-price">
                             <span class="new-price">LE 159.00</span>
@@ -289,6 +324,7 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                         </div>
+                        <a href="#" data-name="JAC22WFWP28270TM1" data-price="159.00" class="add-to-cart btn btn-primary">Add to cart</a>
                     </div>
                         
                     <div class="content-footer d-flex">
@@ -314,6 +350,7 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                         </div>
+                        <a href="#" data-name="JAC22WFWP28270TM1" data-price="159.00" class="add-to-cart btn btn-primary">Add to cart</a>
                     </div>
                         
                     <div class="content-footer d-flex">
@@ -339,6 +376,7 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                         </div>
+                        <a href="#" data-name="JAC22WFWP28270TM1" data-price="159.00" class="add-to-cart btn btn-primary">Add to cart</a>
                     </div>
                         
                     <div class="content-footer d-flex">
@@ -364,6 +402,7 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                         </div>
+                        <a href="#" data-name="JAC22WFWP28270TM1" data-price="159.00" class="add-to-cart btn btn-primary">Add to cart</a>
                     </div>
                         
                     <div class="content-footer d-flex">
@@ -389,6 +428,7 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                         </div>
+                        <a href="#" data-name="JAC22WFWP28270TM1" data-price="159.00" class="add-to-cart btn btn-primary">Add to cart</a>
                     </div>
                         
                     <div class="content-footer d-flex">
