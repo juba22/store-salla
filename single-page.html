@@ -31,7 +31,8 @@
             <a class="navbar-brand" href="https://juba22.github.io/store-salla/"><img src="img/logo-2.png"></a>
             <div class="icon-menu-head">
                 <div class="btn-nav icon-menu-mob">
-                    <a class="cart" type="submit"><span>0</span><i class="fas fa-shopping-cart"></i></a>
+                    <button type="button" data-toggle="modal" data-target="#cart"><span class="total-count">
+                    </span><i class="fas fa-shopping-cart"></i></button>
                     <a class="cart" type="submit"><span>0</span><i class="far fa-heart"></i></a>
                     <a class="user" type="submit" disabled><i class="far fa-user"></i></a>
                 </div>
@@ -110,6 +111,30 @@
     <!----Start Body Code---->
     <!----***************---->
 
+    <!-- Modal box-card -->
+    <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">عربة المشتريات</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table class="show-cart table">
+                
+                </table>
+                <div>الأجمالى: $<span class="total-cart"></span></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">غلق السله</button>
+                <button type="button" class="btn btn-custom"><span>أكمل طلبك</span></button>
+                <button class="clear-cart btn btn-danger">افراغ السله</button>
+            </div>
+            </div>
+        </div>
+    </div> 
 
     <!---------------->
     <!--Product Content-->
@@ -173,12 +198,13 @@
                         </div>
                     </div>
                     <div class="submit-product">
-                        <button class="btn-custom">
-                            <a href="#">
-                                <span>أضافة الى السله</span>
+                            <a href="#"
+                                data-name="JAC22WFWP28270TM1"
+                                data-price="159.00"
+                                class="add-to-cart btn btn-custom">
+                            <span>أضافة الى السله</span>
                                 <i class="fas fa-shopping-cart"></i>
                             </a>
-                        </button>
                         <button class="btn-custom">
                             <a href="#">
                                 <span>محادثه فورية</span>
@@ -258,6 +284,12 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                         </div>
+                        <a href="#" 
+                            data-name="جاكيت-رجالى"
+                            data-price="159.00"
+                            class="add-to-cart btn btn-custom">
+                            <span>أضافة الى السله</span>
+                        </a>
                     </div>
                         
                     <div class="content-footer d-flex">
@@ -283,6 +315,12 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                         </div>
+                        <a href="#" 
+                            data-name="جاكيت-رجالى"
+                            data-price="159.00"
+                            class="add-to-cart btn btn-custom">
+                            <span>أضافة الى السله</span>
+                        </a>
                     </div>
                         
                     <div class="content-footer d-flex">
@@ -308,6 +346,12 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                         </div>
+                        <a href="#" 
+                            data-name="جاكيت-رجالى"
+                            data-price="159.00"
+                            class="add-to-cart btn btn-custom">
+                            <span>أضافة الى السله</span>
+                        </a>
                     </div>
                         
                     <div class="content-footer d-flex">
@@ -333,6 +377,12 @@
                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
                         </div>
+                        <a href="#" 
+                            data-name="جاكيت-رجالى"
+                            data-price="159.00"
+                            class="add-to-cart btn btn-custom">
+                            <span>أضافة الى السله</span>
+                        </a>
                     </div>
                         
                     <div class="content-footer d-flex">
