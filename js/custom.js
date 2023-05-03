@@ -161,11 +161,11 @@ var shoppingCart = (function() {
     for(var i in cartArray) {
       output += "<tr>"
         + "<td>" + cartArray[i].name + "</td>" 
-        + "<td class='calc-price'><div class='input-group'><button class='minus-item input-group-addon btn btn-custom' data-name=" + cartArray[i].name + "><span>-</span></button>"
+        + "<td class='calc-price'><div class='input-group'><button class='minus-item input-group-addon btn btn-custom' data-name=" + cartArray[i].name + "><span><i class='fas fa-minus'></i></span></button>"
         + "<input type='number' class='item-count form-control' data-name='" + cartArray[i].name + "' value='" + cartArray[i].count + "'>"
-        + "<button class='plus-item btn btn-custom input-group-addon' data-name=" + cartArray[i].name + "><span>+</span></button></div><button class='delete-item btn btn-danger' data-name=" + cartArray[i].name + ">X</button></td>"
+        + "<button class='plus-item btn btn-custom input-group-addon' data-name=" + cartArray[i].name + "><span><i class='fas fa-plus'></i></span></button></div>" + cartArray[i].total + "</td>"
         + " = " 
-        + "<td>" + cartArray[i].total + "</td>" 
+        + "<td class='td-btn-del'><button class='delete-item btn btn-del' data-name=" + cartArray[i].name + "><i class='far fa-trash-alt'></i></button></td>" 
         +  "</tr>";
     }
     $('.show-cart').html(output);
@@ -180,7 +180,6 @@ var shoppingCart = (function() {
     shoppingCart.removeItemFromCartAll(name);
     displayCart();
   })
-  
   
   // -1
   $('.show-cart').on("click", ".minus-item", function(event) {
